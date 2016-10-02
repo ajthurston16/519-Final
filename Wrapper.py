@@ -12,7 +12,7 @@ if __name__ == '__main__':
         if training_set_cache is None:
             num_cache, code_cache, num_to_code_cache = TeamSimulation.main()
             training_set_cache, target_cache = TeamSimulation.initialize()
-            writer = pd.ExcelWriter('ModelResults.xlsx')
+            writer = pd.ExcelWriter('Predictions_Lines_Comparison.xlsx')
         print('Cache Established')
         pr = cProfile.Profile()
         pr.enable()
